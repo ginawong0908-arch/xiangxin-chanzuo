@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>祥心禅坐</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <canvas id="main-canvas"></canvas>
+
+  <button id="exit-btn" aria-label="退出禅坐">✕</button>
+
+  <div id="ui">
+    <div id="home-controls">
+      <div id="duration-buttons">
+        <button class="dur-btn" data-minutes="10">十</button>
+        <button class="dur-btn" data-minutes="15">十五</button>
+        <button class="dur-btn" data-minutes="25">廿五</button>
+        <div class="dur-label">分钟</div>
+      </div>
+
+      <div id="zi-picker">
+        <button class="pick-btn" data-zi="定">定</button>
+        <button class="pick-btn" data-zi="静">静</button>
+        <button class="pick-btn" data-zi="观">观</button>
+        <button class="pick-btn" data-zi="空">空</button>
+        <button class="pick-btn" data-zi="心">心</button>
+        <button class="pick-btn" data-zi="明">明</button>
+        <button class="pick-btn" data-zi="和">和</button>
+        <button class="pick-btn" data-zi="正">正</button>
+        <button class="pick-btn" data-zi="安">安</button>
+        <button class="pick-btn" data-zi="淡">淡</button>
+        <button class="pick-btn pick-random" id="zi-random">随机</button>
+      </div>
+
+      <div id="sound-picker">
+        <button class="pick-btn" data-sound="wind">风</button>
+        <button class="pick-btn" data-sound="birds">鸟</button>
+        <button class="pick-btn" data-sound="water">水</button>
+        <button class="pick-btn" data-sound="silent">静</button>
+        <button class="pick-btn pick-random active" id="sound-random">随机</button>
+      </div>
+    </div>
+
+    <div id="verse"></div>
+  </div>
+
+  <div id="exit-verse"></div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

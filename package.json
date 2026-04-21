@@ -1,0 +1,30 @@
+{
+  "name": "xiangxin-chanzuo",
+  "version": "1.0.0",
+  "description": "一个和祥心日历联动的极简禅坐计时器",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ginawong0908-arch/xiangxin-chanzuo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ginawong0908-arch/xiangxin-chanzuo/issues"
+  },
+  "homepage": "https://github.com/ginawong0908-arch/xiangxin-chanzuo#readme",
+  "dependencies": {
+    "@chenglou/pretext": "^0.0.5"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3",
+    "vite": "^8.0.9"
+  }
+}
